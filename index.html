@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform.
+    </p>
+
+    <form id="survey-form">
+      <label id="name-label" for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        placeholder="Enter your name"
+        required
+      />
+      <br />
+
+      <label id="email-label" for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        placeholder="Enter your email"
+        required
+      />
+      <br />
+
+      <label id="number-label" for="number">Age (optional):</label>
+      <input
+        type="number"
+        id="number"
+        name="age"
+        min="10"
+        max="100"
+        placeholder="Enter your age"
+      />
+      <br />
+
+      <label for="dropdown">What best describes your role?</label>
+      <select id="dropdown" name="role">
+        <option value="student">Student</option>
+        <option value="full-time">Full Time Job</option>
+        <option value="prefer-not">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+
+      <p>Would you recommend us?</p>
+      <label>
+        <input type="radio" name="recommend" value="yes" /> Yes
+      </label>
+      <label>
+        <input type="radio" name="recommend" value="no" /> No
+      </label>
+      <label>
+        <input type="radio" name="recommend" value="maybe" /> Maybe
+      </label>
+
+      <p>What do you like?</p>
+      <label>
+        <input type="checkbox" name="like" value="design" /> Design
+      </label>
+      <label>
+        <input type="checkbox" name="like" value="content" /> Content
+      </label>
+      <label>
+        <input type="checkbox" name="like" value="technology" /> Technology
+      </label>
+
+      <p>Additional comments:</p>
+      <textarea placeholder="Enter comments here..."></textarea>
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
